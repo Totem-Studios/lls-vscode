@@ -1,0 +1,38 @@
+{
+  "name": "Prime",
+  "displayName": "Prime Extension",
+  "description": "Prime Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "prime",
+        "aliases": [
+          "Prime",
+          "prime"
+        ],
+        "icon": {
+          "light": "./media/Prime Logo.png",
+          "dark": "./media/Prime Logo.png"
+        },
+        "extensions": [
+          ".pri"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "prime",
+        "scopeName": "source.pri",
+        "path": "./syntaxes/prime.tmLanguage.json"
+      }
+    ]
+  }
+}
