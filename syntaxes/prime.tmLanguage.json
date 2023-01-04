@@ -160,6 +160,20 @@
       ]
     },
 
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.prime",
+          "match": "§.*$"
+        },
+        {
+          "name": "comment.block.prime",
+          "begin": "\\§*",
+          "end": "\\*§"
+        }
+      ]
+    },
+
     "reference": {
       "patterns": [
         {

@@ -6,7 +6,7 @@ function myfunc() {
 
 class Token{
     
-};
+}
 
 main() {
     string input;
@@ -22,4 +22,6 @@ main() {
     file.close("Text.txt");
 
     §Hello World!
+ §*aas
+ asas*§
 }
