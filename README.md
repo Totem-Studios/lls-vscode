@@ -36,6 +36,10 @@ We appreciate your understanding and patience as we continue to improve the Prim
 
 ## Release Notes
 
+### Version 0.0.3
+
+Improved documentation and removed a few unnecessary dependencies
+
 ### Version 0.0.2
 
 This is the initial release of the Prime Language Support Extension. In this version, we have introduced basic language support with syntax highlighting. Although it is a simple implementation, it sets the foundation for future updates and enhancements to the extension.
