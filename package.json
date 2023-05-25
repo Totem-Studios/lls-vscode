@@ -1,8 +1,20 @@
 {
-  "name": "Prime",
-  "displayName": "Prime Extension",
-  "description": "Prime Programming Language",
-  "version": "0.0.1",
+  "name": "prime-language-support",
+  "displayName": "Prime Language Support",
+  "description": "This is the extension to add support for the Prime programming language",
+  "version": "0.0.2",
+  "publisher": "PontusHenriksson",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3FriendsCo/Prime-Language-Support"
+  },
+  "keywords": [
+    "prime",
+    "primeLang",
+    "PLS",
+    "Programming language",
+    "prime compiler"
+  ],
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -15,14 +27,17 @@
         "id": "prime",
         "aliases": [
           "Prime",
-          "prime"
+          "prime",
+          "primeLang",
+          "PLS"
         ],
         "icon": {
-          "light": "./media/Prime Logo.png",
-          "dark": "./media/Prime Logo.png"
+          "light": "./media/extension_icon.png",
+          "dark": "./media/extension_icon.png"
         },
         "extensions": [
-          ".pri"
+          ".pri",
+          ".prime"
         ],
         "configuration": "./language-configuration.json"
       }
