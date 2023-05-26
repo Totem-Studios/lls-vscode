@@ -2,7 +2,7 @@
   "name": "prime-language-support",
   "displayName": "Prime Language Support",
   "description": "This is the extension to add support for the Prime programming language",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "PontusHenriksson",
   "repository": {
     "type": "git",
