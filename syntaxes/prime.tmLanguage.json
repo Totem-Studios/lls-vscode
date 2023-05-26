@@ -27,20 +27,23 @@
   "repository": {
     "liberate": {
       "patterns": [
-        { "name": "keyword.control.prime", "match": "\\b(liberate)\\b" }
+        {
+          "name": "keyword.control.prime",
+          "match": "\\b(liberate|include|import)\\b"
+        }
       ]
     },
     "headerFile": {
       "patterns": [
         {
           "name": "string.prime",
-          "match": "\\b(interface|timeline|filestream|math|colorLib|system)\\b"
+          "match": "\\b(interface|timeline|filestream|math|colorLib|system|cPackage)\\b"
         }
       ]
     },
     "main": {
       "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(main)\\b|fn" }
+        { "name": "constant.language.prime", "match": "\\b(main|fn)\\b" }
       ]
     },
     "null": {
@@ -50,7 +53,10 @@
     },
     "boolean": {
       "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(true|false)\\b" }
+        {
+          "name": "constant.language.prime",
+          "match": "\\b(true|false|null)\\b"
+        }
       ]
     },
     "charValue": {

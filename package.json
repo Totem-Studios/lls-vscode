@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/3FriendsCo/Prime-Language-Support"
   },
+  "icon": "./media/extension-icon.png",
   "keywords": [
     "prime",
     "prime extension",
@@ -34,8 +35,8 @@
           "PLS"
         ],
         "icon": {
-          "light": "./media/extension_icon.png",
-          "dark": "./media/extension_icon.png"
+          "light": "./media/extension-icon.png",
+          "dark": "./media/extension-icon.png"
         },
         "extensions": [
           ".pri",
