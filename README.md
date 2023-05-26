@@ -42,6 +42,10 @@ We appreciate your understanding and patience as we continue to improve the Prim
 
 ## Release Notes
 
+### Version 0.0.4
+
+In this update, we've resolved key issues with Prime keyword highlighting, corrected inaccurate coloring for variables and data types, and added color support for punctuation and mathematical operators. We've also expanded the extension's syntax coverage and optimized its performance. Additionally, image linking issues have been resolved and a new extension logo has been introduced for a more engaging user experience.
+
 ### Version 0.0.3
 
 Improved documentation and removed a few unnecessary dependencies

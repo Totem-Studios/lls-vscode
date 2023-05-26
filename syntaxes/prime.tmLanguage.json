@@ -6,22 +6,17 @@
     { "include": "#comments" },
     { "include": "#liberate" },
     { "include": "#headerFile" },
-    { "include": "#main" },
-    { "include": "#null" },
-    { "include": "#boolean" },
     { "include": "#charValue" },
     { "include": "#keywords" },
     { "include": "#numerics" },
-    { "include": "#reference" },
-    { "include": "#pointer" },
-    { "include": "#void" },
     { "include": "#function_calls" },
-    { "include": "#class" },
     { "include": "#class_name" },
     { "include": "#object" },
     { "include": "#structure" },
-    { "include": "#variables" },
+    { "include": "#variables_and_definition" },
     { "include": "#strings" },
+    { "include": "#constants" },
+    { "include": "#semicolons_and_colons" },
     { "include": "#file" }
   ],
   "repository": {
@@ -41,21 +36,24 @@
         }
       ]
     },
-    "main": {
-      "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(main|fn)\\b" }
-      ]
-    },
-    "null": {
-      "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(null)\\b" }
-      ]
-    },
-    "boolean": {
+
+    "constants": {
       "patterns": [
         {
           "name": "constant.language.prime",
-          "match": "\\b(true|false|null)\\b"
+          "match": "\\b(null|true|false|ref|ptr)\\b"
+        },
+        {
+          "name": "constant.numeric.prime",
+          "match": "\\b([0-9]+(?:\\.[0-9]+)?)\\b"
+        }
+      ]
+    },
+    "semicolons_and_colons": {
+      "patterns": [
+        {
+          "name": "punctuation.terminator.prime",
+          "match": ";|:|,"
         }
       ]
     },
@@ -72,11 +70,23 @@
         }
       ]
     },
-    "variables": {
+    "variables_and_definition": {
       "patterns": [
         {
+          "name": "storage.type.prime",
+          "match": "\\b(int|boolean|char|long|long long|short|double|float|let|const|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
+        },
+        {
+          "name": "storage.type.prime",
+          "match": "\\b(main|fn|function|class|public|private|static)\\b"
+        },
+        {
+          "name": "keyword.operator.prime",
+          "match": "(\\*|\\+|-|%|=)"
+        },
+        {
           "name": "support.class.prime",
-          "match": "\\b(string|int|boolean|char|long|long long|short|double|float|let|const|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
+          "match": "\\b(string)\\b"
         }
       ]
     },
@@ -84,7 +94,7 @@
       "patterns": [
         {
           "name": "keyword.control.prime",
-          "match": "\\b(if|while|return|break|continue|public|private|static)\\b"
+          "match": "\\b(if|else|else if|while|return|break|continue)\\b"
         }
       ]
     },
@@ -102,29 +112,16 @@
         { "name": "comment.block.prime", "begin": "/\\*", "end": "\\*/" }
       ]
     },
-    "reference": {
-      "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(ref)\\b" }
-      ]
-    },
-    "pointer": {
-      "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(ptr)\\b" }
-      ]
-    },
-    "void": {
-      "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(function)\\b" }
-      ]
-    },
     "function_calls": {
       "patterns": [
-        { "name": "support.function.prime", "match": "\\b[a-zA-Z_]\\w*\\s*\\(" }
-      ]
-    },
-    "class": {
-      "patterns": [
-        { "name": "constant.language.prime", "match": "\\b(class)\\b" }
+        {
+          "name": "support.function.prime",
+          "match": "\\b[a-zA-Z_]\\w*\\s*\\("
+        },
+        {
+          "name": "storage.type.prime",
+          "match": "\\b(int|boolean|char|long|long long|short|double|float|let|const|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
+        }
       ]
     },
     "class_name": {
