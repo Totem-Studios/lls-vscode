@@ -87,9 +87,18 @@
         {
           "name": "support.class.prime",
           "match": "\\b(string)\\b"
+        },
+        {
+          "name": "entity.name.function.prime",
+          "match": "\\b[a-zA-Z_]\\w*(?=\\s*\\()"
+        },
+        {
+          "name": "entity.name.variable.prime",
+          "match": "\\b[a-zA-Z_]\\w*\\b"
         }
       ]
     },
+
     "keywords": {
       "patterns": [
         {
