@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Prime",
-  "file_extensions": ["prime"],
+  "name": "Lotus",
+  "file_extensions": ["lotus", "lts", "ltsu"],
   "patterns": [
     { "include": "#comments" },
     { "include": "#liberate" },
@@ -23,7 +23,7 @@
     "liberate": {
       "patterns": [
         {
-          "name": "keyword.control.prime",
+          "name": "keyword.control.lotus",
           "match": "\\b(liberate|include|import)\\b"
         }
       ]
@@ -31,7 +31,7 @@
     "headerFile": {
       "patterns": [
         {
-          "name": "string.prime",
+          "name": "string.lotus",
           "match": "\\b(interface|timeline|filestream|math|colorLib|system|cPackage)\\b"
         }
       ]
@@ -40,11 +40,11 @@
     "constants": {
       "patterns": [
         {
-          "name": "constant.language.prime",
+          "name": "constant.language.lotus",
           "match": "\\b(null|true|false|ref|ptr)\\b"
         },
         {
-          "name": "constant.numeric.prime",
+          "name": "constant.numeric.lotus",
           "match": "\\b([0-9]+(?:\\.[0-9]+)?)\\b"
         }
       ]
@@ -52,20 +52,20 @@
     "semicolons_and_colons": {
       "patterns": [
         {
-          "name": "punctuation.terminator.prime",
+          "name": "punctuation.terminator.lotus",
           "match": ";|:|,"
         }
       ]
     },
     "charValue": {
       "patterns": [
-        { "name": "string.quoted.single.prime", "match": "'([a-zA-Z])'" }
+        { "name": "string.quoted.single.lotus", "match": "'([a-zA-Z])'" }
       ]
     },
     "numerics": {
       "patterns": [
         {
-          "name": "constant.numeric.prime",
+          "name": "constant.numeric.lotus",
           "match": "\\b([0-9]+(?:\\.[0-9]+)?)\\b"
         }
       ]
@@ -73,27 +73,27 @@
     "variables_and_definition": {
       "patterns": [
         {
-          "name": "storage.type.prime",
+          "name": "storage.type.lotus",
           "match": "\\b(int|boolean|char|long|long long|short|double|float|let|const|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
         },
         {
-          "name": "storage.type.prime",
+          "name": "storage.type.lotus",
           "match": "\\b(main|fn|function|class|public|private|static)\\b"
         },
         {
-          "name": "keyword.operator.prime",
+          "name": "keyword.operator.lotus",
           "match": "(\\*|\\+|-|%|=)"
         },
         {
-          "name": "support.class.prime",
+          "name": "support.class.lotus",
           "match": "\\b(string)\\b"
         },
         {
-          "name": "entity.name.function.prime",
+          "name": "entity.name.function.lotus",
           "match": "\\b[a-zA-Z_]\\w*(?=\\s*\\()"
         },
         {
-          "name": "entity.name.variable.prime",
+          "name": "entity.name.variable.lotus",
           "match": "\\b[a-zA-Z_]\\w*\\b"
         }
       ]
@@ -102,50 +102,50 @@
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.prime",
+          "name": "keyword.control.lotus",
           "match": "\\b(if|else|else if|while|return|break|continue)\\b"
         }
       ]
     },
     "strings": {
-      "name": "string.quoted.double.prime",
+      "name": "string.quoted.double.lotus",
       "begin": "\"",
       "end": "\"",
       "patterns": [
-        { "name": "constant.character.escape.prime", "match": "\\\\." }
+        { "name": "constant.character.escape.lotus", "match": "\\\\." }
       ]
     },
     "comments": {
       "patterns": [
-        { "name": "comment.line.prime", "match": "\\s*//.*$" },
-        { "name": "comment.block.prime", "begin": "/\\*", "end": "\\*/" }
+        { "name": "comment.line.lotus", "match": "\\s*//.*$" },
+        { "name": "comment.block.lotus", "begin": "/\\*", "end": "\\*/" }
       ]
     },
     "function_calls": {
       "patterns": [
         {
-          "name": "support.function.prime",
+          "name": "support.function.lotus",
           "match": "\\b[a-zA-Z_]\\w*\\s*\\("
         },
         {
-          "name": "storage.type.prime",
+          "name": "storage.type.lotus",
           "match": "\\b(int|boolean|char|long|long long|short|double|float|let|const|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
         }
       ]
     },
     "class_name": {
       "patterns": [
-        { "name": "support.class.prime", "match": "\\b([a-zA-Z]+)\\s*\\{" }
+        { "name": "support.class.lotus", "match": "\\b([a-zA-Z]+)\\s*\\{" }
       ]
     },
     "structure": {
       "patterns": [
-        { "name": "support.function.prime", "match": "\\b(structure)\\b" }
+        { "name": "support.function.lotus", "match": "\\b(structure)\\b" }
       ]
     },
     "file": {
-      "patterns": [{ "name": "support.class.prime", "match": "\\b(file)\\b" }]
+      "patterns": [{ "name": "support.class.lotus", "match": "\\b(file)\\b" }]
     }
   },
-  "scopeName": "source.pri"
+  "scopeName": "source.lotus"
 }

@@ -2,6 +2,10 @@
 
 All notable changes to the "Prime Language Support" extension will be documented in this file.
 
+### Version 0.0.5
+
+In this update we updated the file extension icons and updated the extension name to Lotus instead of Prime.
+
 ### Version 0.0.4
 
 In this update, we've resolved key issues with Prime keyword highlighting, corrected inaccurate coloring for variables and data types, and added color support for punctuation and mathematical operators. We've also expanded the extension's syntax coverage and optimized its performance. Additionally, image linking issues have been resolved and a new extension logo has been introduced for a more engaging user experience.

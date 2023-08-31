@@ -1,25 +1,24 @@
 {
-  "name": "prime-language-support",
-  "displayName": "Prime Language Support",
-  "description": "This is the extension to add support for the Prime programming language",
-  "version": "0.0.4",
+  "name": "lotus-language-support",
+  "displayName": "Lotus Language Support",
+  "description": "This is the extension to add support for the Lotus programming language",
+  "version": "0.0.5",
   "publisher": "PontusHenriksson",
   "repository": {
     "type": "git",
-    "url": "https://github.com/3FriendsCo/Prime-Language-Support"
+    "url": "https://github.com/BreakerLabs/LLS-vscode"
   },
-  "icon": "./media/extension-icon.png",
   "keywords": [
-    "prime",
-    "prime extension",
-    "primeLang",
-    "PLS",
+    "lotus",
+    "lotus extension",
+    "lotusLang",
+    "LLS",
     "Programming language",
-    "Prime language",
-    "prime compiler"
+    "Lotus language",
+    "lotus compiler"
   ],
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.81.0"
   },
   "categories": [
     "Programming Languages"
@@ -27,29 +26,46 @@
   "contributes": {
     "languages": [
       {
-        "id": "prime",
+        "id": "lotus",
         "aliases": [
-          "Prime",
-          "prime",
-          "primeLang",
-          "PLS"
+          "Lotus",
+          "lotus",
+          "lotusLang",
+          "LLS"
+        ],
+        "extensions": [
+          ".lotus",
+          ".lts"
         ],
         "icon": {
-          "light": "./media/extension-icon.png",
-          "dark": "./media/extension-icon.png"
+          "light": "./media/logo/lotus-icon.png",
+          "dark": "./media/logo/lotus-icon.png"
         },
-        "extensions": [
-          ".pri",
-          ".prime"
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "lotusUtiltities",
+        "aliases": [
+          "lotusUtiltities",
+          "lotusUtils",
+          "Lts utils",
+          "Lotus Utilities"
         ],
+        "extensions": [
+          ".ltsu"
+        ],
+        "icon": {
+          "light": "./media/logo/lotus-utilities-icon.png",
+          "dark": "./media/logo/lotus-utilities-icon.png"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "prime",
-        "scopeName": "source.pri",
-        "path": "./syntaxes/prime.tmLanguage.json"
+        "language": "lotus",
+        "scopeName": "source.lotus",
+        "path": "./syntaxes/lotus.tmLanguage.json"
       }
     ]
   }
