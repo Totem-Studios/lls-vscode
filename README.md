@@ -37,7 +37,7 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 - Added auto-closing pairs for the angle brackets '<>'.
 - Fixed a lot of syntax highlighting issues and started switching to the new syntax. These are the syntax highlighting patterns that we added in this version:
   - Loop structures.
-  - Error handeling.
+  - Error handling.
   - Bitwise operators.
   - Comparison operators.
   - Logical operators.
@@ -54,7 +54,7 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 - Updated and enhanced the documentation for the language both in the extension information and the language docs on github - https://github.com/BreakerLabs/docs.
 
 - **_BUGS_**:
-  - With the languagePattern it doesnt color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
+  - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
 
 ### Give feedback:
 
