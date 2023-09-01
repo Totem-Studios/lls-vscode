@@ -3,32 +3,36 @@
   "name": "Lotus",
   "file_extensions": ["lotus", "lts", "ltsu"],
   "patterns": [
-    { "include": "#comments" },
-    { "include": "#liberate" },
-    { "include": "#headerFile" },
-    { "include": "#charValue" },
-    { "include": "#keywords" },
-    { "include": "#numerics" },
-    { "include": "#function_calls" },
-    { "include": "#class_name" },
-    { "include": "#object" },
-    { "include": "#structure" },
-    { "include": "#variables_and_definition" },
-    { "include": "#strings" },
-    { "include": "#constants" },
-    { "include": "#semicolons_and_colons" },
-    { "include": "#file" }
+    { "include": "#commentPatterns" },
+    { "include": "#importPatterns" },
+    { "include": "#headerPatterns" },
+    { "include": "#charPatterns" },
+    { "include": "#keywordPatterns" },
+    { "include": "#numericPatterns" },
+    { "include": "#functionPatterns" },
+    { "include": "#classNamePatterns" },
+    { "include": "#objectPatterns" },
+    { "include": "#variablePatterns" },
+    { "include": "#stringPatterns" },
+    { "include": "#constantPatterns" },
+    { "include": "#punctuationPatterns" },
+    { "include": "#filePatterns" },
+    { "include": "#loopPatterns" },
+    { "include": "#errorHandlingPatterns" },
+    { "include": "#operatorPatterns" },
+    { "include": "#inputPatterns" },
+    { "include": "#outputPatterns" },
+    { "include": "#asyncPatterns" },
+    { "include": "#lambdaPatterns" },
+    { "include": "#visibilityPatterns" },
+    { "include": "#namespacePatterns" },
+    { "include": "#languagePatterns" }
   ],
   "repository": {
-    "liberate": {
-      "patterns": [
-        {
-          "name": "keyword.control.lotus",
-          "match": "\\b(liberate|include|import)\\b"
-        }
-      ]
+    "importPatterns": {
+      "patterns": [{ "name": "keyword.control.lotus", "match": "\\b(use)\\b" }]
     },
-    "headerFile": {
+    "headerPatterns": {
       "patterns": [
         {
           "name": "string.lotus",
@@ -36,8 +40,7 @@
         }
       ]
     },
-
-    "constants": {
+    "constantPatterns": {
       "patterns": [
         {
           "name": "constant.language.lotus",
@@ -49,20 +52,15 @@
         }
       ]
     },
-    "semicolons_and_colons": {
-      "patterns": [
-        {
-          "name": "punctuation.terminator.lotus",
-          "match": ";|:|,"
-        }
-      ]
+    "punctuationPatterns": {
+      "patterns": [{ "name": "punctuation.terminator.lotus", "match": ";|:|," }]
     },
-    "charValue": {
+    "charPatterns": {
       "patterns": [
         { "name": "string.quoted.single.lotus", "match": "'([a-zA-Z])'" }
       ]
     },
-    "numerics": {
+    "numericPatterns": {
       "patterns": [
         {
           "name": "constant.numeric.lotus",
@@ -70,44 +68,23 @@
         }
       ]
     },
-    "variables_and_definition": {
+    "variablePatterns": {
       "patterns": [
         {
           "name": "storage.type.lotus",
           "match": "\\b(int|boolean|char|long|long long|short|double|float|let|const|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
-        },
-        {
-          "name": "storage.type.lotus",
-          "match": "\\b(main|fn|function|class|public|private|static)\\b"
-        },
-        {
-          "name": "keyword.operator.lotus",
-          "match": "(\\*|\\+|-|%|=)"
-        },
-        {
-          "name": "support.class.lotus",
-          "match": "\\b(string)\\b"
-        },
-        {
-          "name": "entity.name.function.lotus",
-          "match": "\\b[a-zA-Z_]\\w*(?=\\s*\\()"
-        },
-        {
-          "name": "entity.name.variable.lotus",
-          "match": "\\b[a-zA-Z_]\\w*\\b"
         }
       ]
     },
-
-    "keywords": {
+    "keywordPatterns": {
       "patterns": [
         {
           "name": "keyword.control.lotus",
-          "match": "\\b(if|else|else if|while|return|break|continue)\\b"
+          "match": "\\b(if|else|else if|while|return|ret|break|continue)\\b"
         }
       ]
     },
-    "strings": {
+    "stringPatterns": {
       "name": "string.quoted.double.lotus",
       "begin": "\"",
       "end": "\"",
@@ -115,36 +92,170 @@
         { "name": "constant.character.escape.lotus", "match": "\\\\." }
       ]
     },
-    "comments": {
+    "commentPatterns": {
       "patterns": [
         { "name": "comment.line.lotus", "match": "\\s*//.*$" },
         { "name": "comment.block.lotus", "begin": "/\\*", "end": "\\*/" }
       ]
     },
-    "function_calls": {
+    "functionPatterns": {
       "patterns": [
-        {
-          "name": "support.function.lotus",
-          "match": "\\b[a-zA-Z_]\\w*\\s*\\("
-        },
-        {
-          "name": "storage.type.lotus",
-          "match": "\\b(int|boolean|char|long|long long|short|double|float|let|const|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
-        }
+        { "name": "support.function.lotus", "match": "\\b[a-zA-Z_]\\w*\\s*\\(" }
       ]
     },
-    "class_name": {
+    "classNamePatterns": {
       "patterns": [
         { "name": "support.class.lotus", "match": "\\b([a-zA-Z]+)\\s*\\{" }
       ]
     },
-    "structure": {
+    "objectPatterns": {
       "patterns": [
         { "name": "support.function.lotus", "match": "\\b(structure)\\b" }
       ]
     },
-    "file": {
+    "filePatterns": {
       "patterns": [{ "name": "support.class.lotus", "match": "\\b(file)\\b" }]
+    },
+    "loopPatterns": {
+      "patterns": [
+        {
+          "name": "keyword.control.loop.while.lotus",
+          "match": "\\bwhile\\b"
+        },
+        {
+          "name": "keyword.control.loop.doWhile.lotus",
+          "match": "\\bdo\\s*while\\b"
+        },
+        {
+          "name": "keyword.control.loop.for.lotus",
+          "match": "\\bfor\\b"
+        },
+        {
+          "name": "keyword.control.loop.loop.lotus",
+          "match": "\\bloop\\b"
+        }
+      ]
+    },
+    "errorHandlingPatterns": {
+      "patterns": [
+        {
+          "name": "keyword.control.error.try.lotus",
+          "match": "\\btry\\b"
+        },
+        {
+          "name": "keyword.control.error.catch.lotus",
+          "match": "\\bcatch\\b"
+        },
+        {
+          "name": "keyword.control.error.finally.lotus",
+          "match": "\\bfinally\\b"
+        },
+        {
+          "name": "keyword.control.error.throw.lotus",
+          "match": "\\bthrow\\b"
+        }
+      ]
+    },
+    "operatorPatterns": {
+      "patterns": [
+        {
+          "name": "keyword.operator.comparison.lotus",
+          "match": "==|!=|<=|>=|<|>"
+        },
+        {
+          "name": "keyword.operator.logical.lotus",
+          "match": "&&|\\|\\||!"
+        },
+        {
+          "name": "keyword.operator.bitwise.lotus",
+          "match": "&|\\||\\^|<<|>>"
+        }
+      ]
+    },
+    "inputPatterns": {
+      "patterns": [
+        {
+          "name": "support.function.input.lotus",
+          "match": "\\b(input|read)\\b"
+        }
+      ]
+    },
+    "outputPatterns": {
+      "patterns": [
+        {
+          "name": "support.function.print.lotus",
+          "match": "\\b(print|println)\\s*\\("
+        }
+      ]
+    },
+    "asyncPatterns": {
+      "patterns": [
+        { "name": "keyword.control.async.lotus", "match": "\\basync|await\\b" }
+      ]
+    },
+    "lambdaPatterns": {
+      "patterns": [
+        { "name": "keyword.control.lambda.lotus", "match": "\\blambda\\b" }
+      ]
+    },
+    "visibilityPatterns": {
+      "patterns": [
+        {
+          "name": "keyword.control.visibility.lotus",
+          "match": "\\b(public|private|protected)\\b"
+        }
+      ]
+    },
+    "namespacePatterns": {
+      "patterns": [
+        {
+          "name": "keyword.control.namespace.lotus",
+          "match": "\\b(unpack|namespace)\\b"
+        },
+        {
+          "name": "entity.name.namespace.lotus",
+          "match": "(?<=namespace\\s|,\\s|unpack\\snamespace\\s)([a-zA-Z_][a-zA-Z0-9_]*)(?=\\s*[:,]|::|\\s|$)",
+          "captures": {
+            "1": {
+              "name": "entity.name.namespace.lotus"
+            }
+          }
+        },
+        {
+          "name": "entity.name.namespace.lotus",
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)(?=::)",
+          "captures": {
+            "1": {
+              "name": "entity.name.namespace.lotus"
+            }
+          }
+        },
+        {
+          "name": "entity.name.namespace.scope.lotus",
+          "match": "::|,|:\\w+",
+          "captures": {
+            "0": {
+              "name": "entity.name.namespace.scope.lotus"
+            }
+          }
+        }
+      ]
+    },
+    "languagePatterns": {
+      "patterns": [
+        {
+          "name": "markup.tag.angleBrackets.lotus",
+          "match": "<|>"
+        },
+        {
+          "name": "markup.tag.forwardSlash.lotus",
+          "match": "\\/"
+        },
+        {
+          "name": "keyword.custom.embeddedLanguage.tag.lotus",
+          "match": "\\b(java|c-sharp|c|py|js|rust)\\b"
+        }
+      ]
     }
   },
   "scopeName": "source.lotus"

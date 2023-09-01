@@ -19,7 +19,7 @@
     "lotus compiler"
   ],
   "engines": {
-    "vscode": "^1.81.0"
+    "vscode": "^1.69.0"
   },
   "categories": [
     "Programming Languages"
@@ -65,6 +65,11 @@
     "grammars": [
       {
         "language": "lotus",
+        "scopeName": "source.lotus",
+        "path": "./syntaxes/lotus.tmLanguage.json"
+      },
+      {
+        "language": "lotusUtilities",
         "scopeName": "source.lotus",
         "path": "./syntaxes/lotus.tmLanguage.json"
       }

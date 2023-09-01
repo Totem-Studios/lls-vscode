@@ -31,9 +31,30 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 
 ## Release Notes
 
-### Version 0.0.5
+### Version 0.0.6 (2023-??-??)
 
-In this update we updated the file extension icons and updated the extension name to Lotus instead of Lotus.
+- Switched old Prime assets for new Lotus ones.
+- Added auto-closing pairs for the angle brackets '<>'.
+- Fixed a lot of syntax highlighting issues and started switching to the new syntax. These are the syntax highlighting patterns that we added in this version:
+  - Loop structures.
+  - Error handeling.
+  - Bitwise operators.
+  - Comparison operators.
+  - Logical operators.
+  - Input and output methods.
+  - Async/Await functions.
+  - Lambda functions.
+  - Visibility modifiers.
+  - Namespace structures.
+  - Other language support - ex: "<c></c>". (Highlighting for the other languages is not implemented yet)
+- Optimized and restructured the project.
+- Solved the missing logo problem from Version 0.0.5.
+- Now compatible with VScode 1.69.0 and later versions (releases since June 2022).
+- Updated the Google Form to align with the Lotus language.
+- Updated and enhanced the documentation for the language both in the extension information and the language docs on github - https://github.com/BreakerLabs/docs.
+
+- **_BUGS_**:
+  - With the languagePattern it doesnt color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
 
 ### Give feedback:
 
@@ -43,6 +64,6 @@ If you encounter any issues, have ideas for new features, or simply want to shar
 
 To share your feedback, please follow these steps:
 
-1. Click on the following [Google Form link](https://forms.gle/k3bSrBy2aXwXwBWA7) to access the feedback form.
+1. Click on the following [Google Form link](https://forms.gle/VXf5GMC6sfCmRk9LA) to access the feedback form.
 
 2. Fill out the form with your feedback, including any bug reports, feature requests, or general comments you have regarding the Lotus Language Support Extension or language.

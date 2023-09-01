@@ -1,6 +1,8 @@
 {
   "files.associations": {
     "*.embeddedhtml": "html",
-    "*.pri": "prime"
+    "*.lotus": "lotus",
+    "*.lts": "lotus",
+    "*.ltsu": "lotusUtilities"
   }
 }
