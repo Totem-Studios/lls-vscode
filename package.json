@@ -2,8 +2,9 @@
   "name": "lotus-language-support",
   "displayName": "Lotus Language Support",
   "description": "This is the extension to add support for the Lotus programming language",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "PontusHenriksson",
+  "icon": "./media/logo/lotus-icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/BreakerLabs/LLS-vscode"

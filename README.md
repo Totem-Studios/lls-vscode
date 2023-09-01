@@ -1,21 +1,21 @@
 ## Lotus Language Support
 
-![introduction-image](https://music.vernfm.com/Lotus/introduction-image.png)
+![introduction-image](https://breakerlabs.github.io/media/introduction-image.png)
 
-Welcome to the Lotus Language Support extension! We are delighted that you have chosen Lotus as your programming language of choice. This extension is specifically designed to enhance your coding experience by providing essential features such as syntax highlighting and a compiler to run your Lotus programs seamlessly within Visual Studio Code.
+Welcome to the Lotus Language Support extension! We're thrilled you've chosen Lotus as your preferred programming language. This extension is engineered to elevate your coding experience, offering key features like syntax highlighting and auto-formatting. These enhancements ensure that your Lotus programs run seamlessly within Visual Studio Code.
 
 ## Syntax Highlighting
 
-![syntax-image](https://music.vernfm.com/Lotus/syntax-image.png)
+![syntax-image](https://breakerlabs.github.io/media/examples/syntax-hightlighting.png)
 
 <br>
-Syntax highlighting is a crucial aspect of any programming language, as it enhances code readability and helps you identify different elements within your Lotus code. With our extension, you can enjoy vibrant and visually appealing syntax highlighting, which will make it easier for you to identify keywords, variables, functions, and other important components of your Lotus programs.
+Syntax highlighting is an essential feature for any programming language—it dramatically improves code readability and assists you in distinguishing various elements within your Lotus code. Our extension offers vibrant, visually striking syntax highlighting, making it effortless to identify keywords, variables, functions, and other crucial components of your Lotus programs.
 
 <br>
 
 ## Auto Formatting
 
-In the settings you can choose if you want your code to be auto formatted to automatically make it look better or not. This will not optimize your code but it will make it more readable for everyone.
+In the settings, you have the option to enable auto-formatting, which automatically enhances the visual appeal of your code. While this feature won't optimize your code's performance, it will significantly improve its readability for all users.
 
 ## Known Issues
 
