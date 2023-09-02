@@ -30,7 +30,9 @@
   ],
   "repository": {
     "importPatterns": {
-      "patterns": [{ "name": "keyword.control.lotus", "match": "\\b(use)\\b" }]
+      "patterns": [
+        { "name": "keyword.control.lotus", "match": "\\b(use)\\b|@" }
+      ]
     },
     "headerPatterns": {
       "patterns": [
@@ -244,16 +246,16 @@
     "languagePatterns": {
       "patterns": [
         {
-          "name": "markup.tag.angleBrackets.lotus",
-          "match": "<|>"
-        },
-        {
           "name": "markup.tag.forwardSlash.lotus",
-          "match": "\\/"
+          "match": "/"
         },
         {
           "name": "keyword.custom.embeddedLanguage.tag.lotus",
-          "match": "\\b(java|c-sharp|c|py|js|rust)\\b"
+          "match": "(java|cpp|c-sharp|c|py|js|rust)"
+        },
+        {
+          "name": "markup.tag.angleBrackets.lotus",
+          "match": "<|>"
         }
       ]
     }
