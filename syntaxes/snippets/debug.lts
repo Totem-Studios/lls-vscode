@@ -1,0 +1,36 @@
+@use
+@ use
+@     use
+
+@use interface
+
+@ifndef LOTUS_DEBUG
+@def LOTUS_DEBUG 1
+@endif
+
+unpack namespace interface
+unpack namespace time
+unpack namespace filestream
+unpack namespace math
+unpack namespace colorLib
+unpack namespace system
+
+using namespace interface
+using namespace time
+using namespace filestream
+using namespace math
+using namespace colorLib
+using namespace system
+
+unpack namespace interface
+unpack     namespace interface
+unpack     namespace     interface
+
+using namespace interface
+using     namespace interface
+using     namespace     interface
+
+fn main(){}
+fn main (){}
+fn     main(){}
+fn     main     (){}

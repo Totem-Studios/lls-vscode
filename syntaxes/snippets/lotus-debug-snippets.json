@@ -1,0 +1,22 @@
+{
+  "Lotus Extension Highlighting Debugger Snippets": {
+    "prefix": "lehds",
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} < ${2:limit}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Standard for loop",
+    "scope": "source.lotus"
+  },
+  "Lotus Extension Highlighting Debugger Snippets For Namespaces": {
+    "prefix": "lehds_namespaces",
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} < ${2:limit}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Standard for loop",
+    "scope": "source.lotus"
+  }
+}

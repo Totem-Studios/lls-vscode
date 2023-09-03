@@ -25,6 +25,16 @@
     "Programming Languages"
   ],
   "contributes": {
+    "snippets": [
+      {
+        "language": "lotus",
+        "path": "./syntaxes/snippets/lotus-snippets.json"
+      },
+      {
+        "language": "lotus",
+        "path": "./syntaxes/snippets/lotus-debug-snippets.json"
+      }
+    ],
     "languages": [
       {
         "id": "lotus",
