@@ -1,13 +1,15 @@
-@use
+// Import Directives
+@use interface
 @ use
 @     use
-
 @use interface
 
+// Conditional Compilation
 @ifndef LOTUS_DEBUG
 @def LOTUS_DEBUG 1
 @endif
 
+// Namespace with unpacking
 unpack namespace interface
 unpack namespace time
 unpack namespace filestream
@@ -15,6 +17,7 @@ unpack namespace math
 unpack namespace colorLib
 unpack namespace system
 
+// Namespace with using
 using namespace interface
 using namespace time
 using namespace filestream
@@ -22,15 +25,81 @@ using namespace math
 using namespace colorLib
 using namespace system
 
+// Spacing Variations for Namespace Unpacking
 unpack namespace interface
 unpack     namespace interface
 unpack     namespace     interface
 
+// Spacing Variations for Namespace Usage
 using namespace interface
 using     namespace interface
 using     namespace     interface
 
+// Function Declarations
 fn main(){}
 fn main (){}
 fn     main(){}
 fn     main     (){}
+
+// More Function Declarations
+fn add(a, b) {
+    return a + b;
+    ret a + b
+}
+
+fn greet(name) {
+    print("Hello, " + name);
+}: name;
+
+// If-Else Statements
+if (a > b) {
+    print("a is greater");
+} else if (a < b) {
+    print("b is greater");
+} else {
+    print("a and b are equal");
+}
+
+// Loops
+for (let i = 0; i < 10; i++) {
+    print(i);
+}
+
+while (a < 10) {
+    a++
+}
+
+loop (5) {
+    print("Looping");
+}
+
+// Try-Catch Block
+try {
+    // some code
+} catch (error) {
+    print("An error occurred: " + error)
+}
+
+// Switch-Case
+switch (day) {
+    case "Monday":
+        print("Start of the week");
+        break
+    case "Friday":
+        print("End of the week");
+        break
+    default:
+        print("It's a regular day");
+}
+
+// Array and Object Declarations
+let arr = [1, 2, 3]
+let obj = {
+    "key": "value"
+}
+
+// Async-Await
+async fn fetchData() {
+    let data = await someAsyncFunction()
+    print(data);
+}
