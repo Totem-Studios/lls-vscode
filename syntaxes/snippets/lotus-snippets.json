@@ -1,4 +1,10 @@
 {
+  "Greeting": {
+    "prefix": "greeting",
+    "body": ["shell::println(\"Hello World!\");"],
+    "description": "Standard for loop",
+    "scope": "source.lotus"
+  },
   "ForLoop": {
     "prefix": "for",
     "body": [
@@ -72,6 +78,19 @@
       "\t\tbreak;",
       "\tdefault:",
       "\t\tbreak;",
+      "}"
+    ],
+    "description": "Switch-Case statement",
+    "scope": "source.lotus"
+  },
+  "Switch_short": {
+    "prefix": "switch_short",
+    "body": [
+      "switch (${1:expression}): break {",
+      "\t${2:value}:",
+      "\t\t$3",
+      "\tdefault:",
+      "\t\t$4",
       "}"
     ],
     "description": "Switch-Case statement",

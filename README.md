@@ -47,6 +47,7 @@ We appreciate your understanding and patience as we continue to improve the Lotu
   - Visibility modifiers.
   - Namespace structures.
   - Other language support - ex: "<c></c>". (Highlighting for the other languages is not implemented yet)
+  - Added snippets so that when you type for example `for` you could insert a for loop that you can edit to fit your scenario.
 - Optimized and restructured the project.
 - Solved the missing logo problem from Version 0.0.5.
 - Now compatible with VScode 1.69.0 and later versions (releases since June 2022).
@@ -55,6 +56,7 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 
 - **_BUGS_**:
   - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
+  - It seems to mark `<` as an error in for loops for example if it isnt together with its counterpart `< >` but that is probably a language-configuration.json problem.
 
 ### Give feedback:
 
