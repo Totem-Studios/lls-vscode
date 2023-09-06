@@ -5,7 +5,6 @@ This file documents all significant updates to the "Lotus Language Support" exte
 ### Version 0.0.6 (2023-??-??)
 
 - Switched old Prime assets for new Lotus ones.
-- Added auto-closing pairs for the angle brackets '<>'.
 - Fixed a lot of syntax highlighting issues and started switching to the new syntax. These are the syntax highlighting patterns that we added in this version:
   - Loop structures.
   - Error handling.
@@ -27,7 +26,6 @@ This file documents all significant updates to the "Lotus Language Support" exte
 
 - **_BUGS_**:
   - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
-  - It seems to mark `<` as an error in for loops for example if it isnt together with its counterpart `< >` but that is probably a language-configuration.json problem.
 
 ### Version 0.0.5 (2023-08-31)
 
@@ -54,11 +52,11 @@ This file documents all significant updates to the "Lotus Language Support" exte
 - Improved the syntax highlighting.
 - Lays the groundwork for future updates.
 
-## Version 0.0.1
+## Version 0.0.1 (2023-05-13)
 
 - Initial release.
 - Added more keywords but this still included basic syntax highlighting.
 
-## [Unreleased beta]
+## [Unreleased beta] (2023-04-28)
 
 - Added very simple syntax highlighting and created basic documentation which lays the groundwork for future updates.

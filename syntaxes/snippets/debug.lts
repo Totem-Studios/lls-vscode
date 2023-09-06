@@ -77,17 +77,17 @@ loop (5) {
 try {
     // some code
 } catch (error) {
-    print("An error occurred: " + error)
+    print("An error occurred: " + error);
 }
 
 // Switch-Case
 switch (day) {
     case "Monday":
         print("Start of the week");
-        break
+        break;
     case "Friday":
         print("End of the week");
-        break
+        break;
     default:
         print("It's a regular day");
 }

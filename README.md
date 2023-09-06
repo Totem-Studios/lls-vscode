@@ -1,6 +1,11 @@
-## Lotus Language Support
+# Lotus Language Support
 
-![introduction-image](https://breakerlabs.github.io/media/introduction-image.png)
+<p align="center"><img width="800px" src="https://breakerlabs.github.io/media/examples/landing-image.png"></p>
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=PontusHenriksson.lotus-language-support#review-details"><img src="https://img.shields.io/badge/marketplace-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
+</p>
+
+---
 
 Welcome to the Lotus Language Support extension! We're thrilled you've chosen Lotus as your preferred programming language. This extension is engineered to elevate your coding experience, offering key features like syntax highlighting and auto-formatting. These enhancements ensure that your Lotus programs run seamlessly within Visual Studio Code.
 
@@ -34,7 +39,6 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 ### Version 0.0.6 (2023-??-??)
 
 - Switched old Prime assets for new Lotus ones.
-- Added auto-closing pairs for the angle brackets '<>'.
 - Fixed a lot of syntax highlighting issues and started switching to the new syntax. These are the syntax highlighting patterns that we added in this version:
   - Loop structures.
   - Error handling.
@@ -56,7 +60,6 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 
 - **_BUGS_**:
   - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
-  - It seems to mark `<` as an error in for loops for example if it isnt together with its counterpart `< >` but that is probably a language-configuration.json problem.
 
 ### Give feedback:
 
@@ -69,3 +72,12 @@ To share your feedback, please follow these steps:
 1. Click on the following [Google Form link](https://forms.gle/VXf5GMC6sfCmRk9LA) to access the feedback form.
 
 2. Fill out the form with your feedback, including any bug reports, feature requests, or general comments you have regarding the Lotus Language Support Extension or language.
+
+This project exists thanks to all the people who [[Contribute]](https://github.com/BreakerLabs/lls-vscode/CONTRIBUTING.md). Here are a list of the people who has contributed the most:
+<br>
+<br>
+<a href="graphs/contributors"><img src="https://breakerlabs.github.io/media/examples/contributors.svg" /></a>
+
+<p align="center">  Copyright &copy; 2023 Pontus Henriksson & Neo Mannskär</p>
+
+<p align="center"><a href="https://opensource.org/license/mit/"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"/></a></p>

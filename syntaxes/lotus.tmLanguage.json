@@ -213,7 +213,7 @@
       "patterns": [
         {
           "name": "keyword.control.visibility.lotus",
-          "match": "\\b(public|private|protected|static)\\b"
+          "match": "\\b(public|private|protected|static|extends|virtual)\\b"
         }
       ]
     },
