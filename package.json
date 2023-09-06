@@ -2,7 +2,7 @@
   "name": "lotus-language-support",
   "displayName": "Lotus Language Support",
   "description": "This is the extension to add support for the Lotus programming language",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "PontusHenriksson",
   "icon": "./media/logo/lotus-icon.png",
   "repository": {

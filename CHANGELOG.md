@@ -2,6 +2,14 @@
 
 This file documents all significant updates to the "Lotus Language Support" extension.
 
+### Version 0.0.7 (2023-??-??)
+
+- ...
+
+- **_BUGS_**:
+  - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
+  - While the icons are already sorted, the syntax highlighting currently has some issues—colors are inconsistent across various themes, and some themes don't highlight properly at all.
+
 ### Version 0.0.6 (2023-09-07)
 
 - Switched old Prime assets for new Lotus ones.
@@ -23,10 +31,6 @@ This file documents all significant updates to the "Lotus Language Support" exte
 - Now compatible with VScode 1.69.0 and later versions (releases since June 2022).
 - Updated the Google Form to align with the Lotus language.
 - Updated and enhanced the documentation for the language both in the extension information and the language docs on github - https://github.com/BreakerLabs/docs.
-
-- **_BUGS_**:
-  - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
-  - While the icons are already sorted, the syntax highlighting currently has some issues—colors are inconsistent across various themes, and some themes don't highlight properly at all.
 
 ### Version 0.0.5 (2023-08-31)
 
