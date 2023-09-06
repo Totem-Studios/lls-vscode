@@ -1,21 +1,26 @@
-## Lotus Language Support
+# Lotus Language Support
 
-![introduction-image](https://music.vernfm.com/Lotus/introduction-image.png)
+<p align="center"><img width="800px" src="https://breakerlabs.github.io/media/examples/landing-image.png"></p>
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=PontusHenriksson.lotus-language-support#review-details"><img src="https://img.shields.io/badge/marketplace-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
+</p>
 
-Welcome to the Lotus Language Support extension! We are delighted that you have chosen Lotus as your programming language of choice. This extension is specifically designed to enhance your coding experience by providing essential features such as syntax highlighting and a compiler to run your Lotus programs seamlessly within Visual Studio Code.
+---
+
+Welcome to the Lotus Language Support extension! We're thrilled you've chosen Lotus as your preferred programming language. This extension is engineered to elevate your coding experience, offering key features like syntax highlighting and auto-formatting. These enhancements ensure that your Lotus programs run seamlessly within Visual Studio Code.
 
 ## Syntax Highlighting
 
-![syntax-image](https://music.vernfm.com/Lotus/syntax-image.png)
+![syntax-image](https://breakerlabs.github.io/media/examples/syntax-hightlighting.png)
 
 <br>
-Syntax highlighting is a crucial aspect of any programming language, as it enhances code readability and helps you identify different elements within your Lotus code. With our extension, you can enjoy vibrant and visually appealing syntax highlighting, which will make it easier for you to identify keywords, variables, functions, and other important components of your Lotus programs.
+Syntax highlighting is an essential feature for any programming language—it dramatically improves code readability and assists you in distinguishing various elements within your Lotus code. Our extension offers vibrant, visually striking syntax highlighting, making it effortless to identify keywords, variables, functions, and other crucial components of your Lotus programs.
 
 <br>
 
 ## Auto Formatting
 
-In the settings you can choose if you want your code to be auto formatted to automatically make it look better or not. This will not optimize your code but it will make it more readable for everyone.
+In the settings, you have the option to enable auto-formatting, which automatically enhances the visual appeal of your code. While this feature won't optimize your code's performance, it will significantly improve its readability for all users.
 
 ## Known Issues
 
@@ -31,9 +36,31 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 
 ## Release Notes
 
-### Version 0.0.5
+### Version 0.0.6 (2023-09-07)
 
-In this update we updated the file extension icons and updated the extension name to Lotus instead of Lotus.
+- Switched old Prime assets for new Lotus ones.
+- Fixed a lot of syntax highlighting issues and started switching to the new syntax. These are the syntax highlighting patterns that we added in this version:
+  - Loop structures.
+  - Error handling.
+  - Bitwise operators.
+  - Comparison operators.
+  - Logical operators.
+  - Input and output methods.
+  - Async/Await functions.
+  - Lambda functions.
+  - Visibility modifiers.
+  - Namespace structures.
+  - Other language support - ex: "<c></c>". (Highlighting for the other languages is not implemented yet)
+  - Added snippets so that when you type for example `for` you could insert a for loop that you can edit to fit your scenario.
+- Optimized and restructured the project.
+- Solved the missing logo problem from Version 0.0.5.
+- Now compatible with VScode 1.69.0 and later versions (releases since June 2022).
+- Updated the Google Form to align with the Lotus language.
+- Updated and enhanced the documentation for the language both in the extension information and the language docs on github - https://github.com/BreakerLabs/docs.
+
+- **_BUGS_**:
+  - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
+  - While the icons are already sorted, the syntax highlighting currently has some issues—colors are inconsistent across various themes, and some themes don't highlight properly at all.
 
 ### Give feedback:
 
@@ -43,6 +70,15 @@ If you encounter any issues, have ideas for new features, or simply want to shar
 
 To share your feedback, please follow these steps:
 
-1. Click on the following [Google Form link](https://forms.gle/k3bSrBy2aXwXwBWA7) to access the feedback form.
+1. Click on the following [Google Form link](https://forms.gle/VXf5GMC6sfCmRk9LA) to access the feedback form.
 
 2. Fill out the form with your feedback, including any bug reports, feature requests, or general comments you have regarding the Lotus Language Support Extension or language.
+
+This project exists thanks to all the people who [[Contribute]](https://github.com/BreakerLabs/lls-vscode/CONTRIBUTING.md). Here are a list of the people who has contributed the most:
+<br>
+<br>
+<a href="graphs/contributors"><img src="https://breakerlabs.github.io/media/examples/contributors.svg" /></a>
+
+<p align="center">  Copyright &copy; 2023 Pontus Henriksson & Neo Mannskär</p>
+
+<p align="center"><a href="https://opensource.org/license/mit/"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"/></a></p>

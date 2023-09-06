@@ -1,0 +1,111 @@
+{
+  "Greeting": {
+    "prefix": "greeting",
+    "body": ["shell::println(\"Hello World!\");"],
+    "description": "Standard for loop",
+    "scope": "source.lotus"
+  },
+  "ForLoop": {
+    "prefix": "for",
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} < ${2:limit}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Standard for loop",
+    "scope": "source.lotus"
+  },
+  "LotusLoop": {
+    "prefix": "loop",
+    "body": ["loop (${1:times}) {", "\t$0", "}"],
+    "description": "Lotus built-in loop",
+    "scope": "source.lotus"
+  },
+  "IfStatement": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "\t$0", "}"],
+    "description": "If statement",
+    "scope": "source.lotus"
+  },
+  "ElseStatement": {
+    "prefix": "else",
+    "body": ["else {", "\t$0", "}"],
+    "description": "Else statement",
+    "scope": "source.lotus"
+  },
+  "ElseIfStatement": {
+    "prefix": "elif",
+    "body": ["else if (${1:condition}) {", "\t$0", "}"],
+    "description": "Else If statement",
+    "scope": "source.lotus"
+  },
+  "WhileLoop": {
+    "prefix": "while",
+    "body": ["while (${1:condition}) {", "\t$0", "}"],
+    "description": "While loop",
+    "scope": "source.lotus"
+  },
+  "DoWhileLoop": {
+    "prefix": "dowhile",
+    "body": ["do {", "\t$0", "} while (${1:condition});"],
+    "description": "Do-While loop",
+    "scope": "source.lotus"
+  },
+  "FunctionDeclaration": {
+    "prefix": "fn",
+    "body": ["fn ${1:functionName}(${2:parameters}) {", "\t$0", "}"],
+    "description": "Function declaration",
+    "scope": "source.lotus"
+  },
+  "TryCatch": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t$0",
+      "} catch (${1:error}) {",
+      "\t// handle error",
+      "}"
+    ],
+    "description": "Try-Catch block",
+    "scope": "source.lotus"
+  },
+  "SwitchCase": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:expression}) {",
+      "\tcase ${2:value}:",
+      "\t\t$0",
+      "\t\tbreak;",
+      "\tdefault:",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "Switch-Case statement",
+    "scope": "source.lotus"
+  },
+  "Switch_short": {
+    "prefix": "switch_short",
+    "body": [
+      "switch (${1:expression}): break {",
+      "\t${2:value}:",
+      "\t\t$3",
+      "\tdefault:",
+      "\t\t$4",
+      "}"
+    ],
+    "description": "Switch-Case statement",
+    "scope": "source.lotus"
+  },
+  "ArrayDeclaration": {
+    "prefix": "arr",
+    "body": ["let ${1:arrayName} = [${0}];"],
+    "description": "Array declaration",
+    "scope": "source.lotus"
+  },
+  "ObjectDeclaration": {
+    "prefix": "obj",
+    "body": ["let ${1:objectName} = {", "\t$0", "};"],
+    "description": "Object declaration",
+    "scope": "source.lotus"
+  }
+}

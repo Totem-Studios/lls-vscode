@@ -2,8 +2,9 @@
   "name": "lotus-language-support",
   "displayName": "Lotus Language Support",
   "description": "This is the extension to add support for the Lotus programming language",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "PontusHenriksson",
+  "icon": "./media/logo/lotus-icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/BreakerLabs/LLS-vscode"
@@ -15,15 +16,28 @@
     "LLS",
     "Programming language",
     "Lotus language",
-    "lotus compiler"
+    "lotus compiler",
+    "highlighting",
+    "highlighting for lotus"
   ],
   "engines": {
-    "vscode": "^1.81.0"
+    "vscode": "^1.69.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
+    "snippets": [
+      {
+        "language": "lotus",
+        "path": "./syntaxes/snippets/lotus-snippets.json"
+      },
+      {
+        "language": "lotus",
+        "path": "./syntaxes/snippets/lotus-debug-snippets.json"
+      }
+    ],
     "languages": [
       {
         "id": "lotus",
@@ -64,6 +78,11 @@
     "grammars": [
       {
         "language": "lotus",
+        "scopeName": "source.lotus",
+        "path": "./syntaxes/lotus.tmLanguage.json"
+      },
+      {
+        "language": "lotusUtilities",
         "scopeName": "source.lotus",
         "path": "./syntaxes/lotus.tmLanguage.json"
       }
