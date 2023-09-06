@@ -77,7 +77,7 @@ To share your feedback, please follow these steps:
 This project exists thanks to all the people who [[Contribute]](https://github.com/BreakerLabs/lls-vscode/CONTRIBUTING.md). Here are a list of the people who has contributed the most:
 <br>
 <br>
-<a href="graphs/contributors"><img src="https://breakerlabs.github.io/media/examples/contributors.svg" /></a>
+<a href="graphs/contributors"><img src="https://breakerlabs.github.io/media/examples/contributors.png" /></a>
 
 <p align="center">  Copyright &copy; 2023 Pontus Henriksson & Neo Mannskär</p>
 
