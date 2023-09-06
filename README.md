@@ -36,7 +36,7 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 
 ## Release Notes
 
-### Version 0.0.6 (2023-??-??)
+### Version 0.0.6 (2023-09-07)
 
 - Switched old Prime assets for new Lotus ones.
 - Fixed a lot of syntax highlighting issues and started switching to the new syntax. These are the syntax highlighting patterns that we added in this version:
@@ -60,6 +60,7 @@ We appreciate your understanding and patience as we continue to improve the Lotu
 
 - **_BUGS_**:
   - With the languagePattern it doesn't color the '/' and it colors all occurences of the languages in the list for example "int **_`c`_** = 3;" gets highlighted as the language c.
+  - While the icons are already sorted, the syntax highlighting currently has some issues—colors are inconsistent across various themes, and some themes don't highlight properly at all.
 
 ### Give feedback:
 

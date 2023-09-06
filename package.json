@@ -16,13 +16,16 @@
     "LLS",
     "Programming language",
     "Lotus language",
-    "lotus compiler"
+    "lotus compiler",
+    "highlighting",
+    "highlighting for lotus"
   ],
   "engines": {
     "vscode": "^1.69.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "snippets": [
