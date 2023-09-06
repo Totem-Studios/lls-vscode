@@ -2,7 +2,7 @@
 
 ...
 
-This project exists thanks to all the people who [[Contribute]](https://github.com/BreakerLabs/lls-vscode/CONTRIBUTING.md). Here are a list of the people who has contributed the most:
+This project exists thanks to all the people who [[Contribute]](https://github.com/BreakerLabs/LLS-vscode/blob/main/CONTRIBUTING.md). Here are a list of the people who has contributed the most:
 <br>
 <br>
 <a href="graphs/contributors"><img src="https://breakerlabs.github.io/media/examples/contributors.png" /></a>

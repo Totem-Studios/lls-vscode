@@ -56,7 +56,7 @@ To share your feedback, please follow these steps:
 
 2. Fill out the form with your feedback, including any bug reports, feature requests, or general comments you have regarding the Lotus Language Support Extension or language.
 
-This project exists thanks to all the people who [[Contribute]](https://github.com/BreakerLabs/lls-vscode/CONTRIBUTING.md). Here are a list of the people who has contributed the most:
+This project exists thanks to all the people who [[Contribute]](https://github.com/BreakerLabs/LLS-vscode/blob/main/CONTRIBUTING.md). Here are a list of the people who has contributed the most:
 <br>
 <br>
 <a href="graphs/contributors"><img src="https://breakerlabs.github.io/media/examples/contributors.png" /></a>
